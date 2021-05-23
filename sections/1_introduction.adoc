@@ -1,0 +1,84 @@
+[[introduction]]
+== Introduction
+
+All chapters should begin with an introduction before any sections begin.
+Further, each sections begins with an introduction before  subsections begin.
+Chapters with just one section or sections with just one sub-section, should be avoided.
+Think carefully about chapter and section titles as each title stand alone in the table of contents (without associated text) and should convey meaning for the contents of the chapter or section.
+
+In all chapters and sections it is important to write clearly and concisely.
+Avoid repetitions and if needed, refer back to the original discussion or presentation.
+Each new section, subsection or paragraph should provide the reader with new information and be written in your own words.
+Avoid direct quotes.
+If you use direct quotes, unless the quote itself is very significant, you are conveying to the reader that you are unable to express this discussion or fact yourself.
+Such direct quotes also break the flow of the language (yours to someone else's).
+
+[[background_and_motivation]]
+=== Background and Motivation
+
+Having a template to work from provides a starting point.
+However, for a given project, a slight variation in the template may be required due to the nature of the given project.
+Further, the order in which the various chapters and sections will be written will also vary from project to project but will seldom start at the abstract and sequentially follow the chapters of the report.
+One critical reason for this, is that you need to start writing as early as possible and you will begin to write up where you are currently focusing.
+However, do not leave the abstract until the end.
+The abstract is the first thing anyone reads of an article or thesis, after the title; and thus it is important that it is very well written.
+Abstracts are hard to write so create revisions throughout the course of your project as your project progresses.
+
+This introduction to background and motivation should state where this project is situated in the field and what the key driving forces motivating this research are.
+However, keep this section brief as it is still part of the introduction.
+The motivation will be further extended in xref:background_theory_and_motivation[], presenting your complete state-of-the-art.
+Note that this template uses italics to highlight where latin wording is inserted to represent text and the text of the template that we wish to draw your attention to.
+The italics themself are not an indication that such sections should use italics.
+
+[[goals_and_research_questions]]
+=== Goals and Research Questions
+
+A masters is a research project and thus there needs to be a question(s) that need answered.
+Such questions are often a very important part of the results that come out of the specialisation project.
+For those following the one year masters project, it is desirable to create such questions as early as possible as the formation of such questions provide both an important driving force for the masters project and provide clarity as to the goals sought.
+However, one will expect to refine the questions and thus the final path of the masters as work progresses.
+However any refinements should be conducted with care so as to avoid that the original aims, and previous work are not lost.
+It is always good to have one (or max 2) key questions and perhaps some sub questions.
+
+*Goal* _Lorem ipsum dolor sit amet, consectetur adipiscing elit._
+
+Your goal/objective should be described in a single sentence.
+In the text under you can expand on this sentence to clarify what is meant by the short goal description.
+The goal of your work is what you are trying to achieve.
+This can either be the goal of your actual project or can be a broader goal that you have taken steps towards achieving.
+Such steps should be expressed in the research questions.
+Note that the goal is seldom to build a system.
+A system is built to to enable experiments to be conducted.
+The research question/goal would be the goal that the system is implemented to meet.
+
+*Research question 1* _Lorem ipsum dolor sit amet, consectetur adipiscing elit._
+
+Each research question provides a sub-goal and these should be precise and clearly stated enabling the reader to match your results to the original goals.
+They will also form the driving force for the experimental plan.
+
+*Research question 2* _Lorem ipsum dolor sit amet, consectetur adipiscing elit._
+
+[[reasearch_method]]
+=== Research Method
+
+What methodology will you apply to address the goals: theoretic/analytic, model/abstraction or design/experiment?
+This section will describe the research methodology applied and the reason for this choice of research methodology.
+
+[[intro_contributions]]
+=== Contributions
+
+The main description of the contributions will come in xref:contributions[] after the results are presented.
+This section just provides a brief summary of the main contributions of the work.
+This section can also be left out, leaving all discussions in xref:contributions[].
+
+The format of this section will generally follow the following format:
+
+. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[[thesis_structure]]
+=== Thesis Structure
+
+This section provides the reader with an overview of what is coming in the next chapters.
+You want to say more than what is explicit in the chapter name, if possible, but still keep the description short and to the point.

@@ -1,0 +1,38 @@
+
+[[experiments_and_results]]
+== Experiments and Results
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nam consequat pulvinar hendrerit.
+Praesent sit amet elementum ipsum.
+Praesent id suscipit est.
+Maecenas gravida pretium magna non interdum.
+Donec augue felis, rhoncus quis laoreet sed, gravida nec nisi.
+Fusce iaculis fermentum elit in suscipit.
+Donec rutrum tincidunt tellus, ac tempor diam posuere quis.
+
+[[experimental_plan]]
+=== Experimental Plan
+
+Trying and failing is a major part of research.
+However, to have a chance of success you need a plan driving the experimental research, just as you need a plan for your literature search.
+Further, plans are made to be revised and this revision ensures that any further decisions made are in line with the work already completed.
+
+The plan should include what experiments or series of experiments are planned and what question the individual or set of experiments aim to answer.
+Such questions should be connected to your research questions so that in the evaluation of your results you can discuss the results wrt to the research questions.
+
+[[experimental_setup]]
+=== Experimental Setup
+
+The experimental setup should include all data, parameters, etc., that would allow a person to repeat your experiments.
+
+[[experimental_results]]
+=== Experimental Results
+
+Results should be clearly displayed and should provide a suitable representation of your results for the points you wish to make.
+Graphs should be labeled in a legible font and if more than one result is displayed on the same graph then these should be clearly marked.
+Please choose carefully rather than presenting every results.
+Too much information is hard to read and often hides the key information you wish to present.
+Make use of statistical methods when presenting results, where possible to strengthen the results.
+Further, the format of the presentation of results should be chosen based on what issues in the results you wish to highlight.
+You may wish to present a subset in the experimental section and provide additional results in the appendix.

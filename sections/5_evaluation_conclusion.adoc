@@ -1,0 +1,34 @@
+[[evaluation_and_conclusion]]
+== Evaluation and Conclusion
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nam consequat pulvinar hendrerit.
+Praesent sit amet elementum ipsum.
+Praesent id suscipit est.
+Maecenas gravida pretium magna non interdum.
+Donec augue felis, rhoncus quis laoreet sed, gravida nec nisi.
+Fusce iaculis fermentum elit in suscipit.
+
+[[evaluation]]
+=== Evaluation
+
+When evaluating your results, avoid drawing grand conclusions, beyond that which your results can infact support.
+Further, although you may have designed your experiments to answer certain questions, the results may raise other questions in the eyes of the reader.
+It is important that you study the graphs/tables to look for unusual features/entries and discuss these aswell as discussing the main findings in the results.
+
+[[discussion]]
+=== Discussion
+
+In the discussion it is important to include a discussion of not just the merits of the work conducted but also the limitations.
+
+[[contributions]]
+=== Contributions
+
+What are the main contributions made to the field and how significant are these contribution.
+
+[[future_work]]
+=== Future Work
+
+Consider where you would like to extend this work.
+These extensions might either be continuing the ongoing direction or taking a side direction that became obvious during the work.
+Further, possible solutions to limitations in the work conducted, highlighted in xref:discussion[] may be presented.

@@ -1,0 +1,17 @@
+[cols="1,1"]
+|===
+| Fruit | Color
+
+| Orange
+| Orange
+
+| Apple
+| Red, Green, Yello
+
+| Watermelon
+| Green, Red
+
+| Banana
+| Yellow
+
+|===

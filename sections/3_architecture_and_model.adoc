@@ -1,0 +1,6 @@
+[[architecture_and_model]]
+== Architecture/Model
+
+Here you will present the architecture or model that you have chosen and that is (or will be) implemented in your work.
+Note that putting algorithms in your report is not desirable but in certain cases these might be placed in the appendix.
+Code further be avoided in the report itself but may be delivered in the fashion requested by the supervisor or, in the case of masters delivery, submitted as additional documents.

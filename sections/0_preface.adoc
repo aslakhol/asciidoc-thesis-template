@@ -1,0 +1,24 @@
+[abstract]
+== Abstract
+
+This paper provides a template for writing AI project rapports for either the AI specialisation project; masters "datateknikk" or masters "informatikk".
+The use of the template is recommended and is written in english as we encourage students to submit their project and masters theses in English.
+The template does not form a compulsory style that you are obliged to use.
+However, the format and contents are a result of a joint AI group initiative thus providing a common starting point for all AI students. For a given project tuning of the template may still be required. Such tuning might involve moving a chapter to a section or vice versa due to the nature of the project.
+
+The abstract is your sales pitch which encourages people to read your work but unlike sales it should be realistic with respect to the contributions of the work.
+It should include:
+
+- the field of research
+- a brief motivation for the work
+- what the research topic is and
+- the research approach(es) applied.
+- contributions
+
+The abstract length should be roughly half a page of text, without lists, tables or figures.
+
+[discrete]
+== Acknowledgement
+
+This section is for giving any acknowledgments you might want to give.
+If you want more sections before the beginning of the thesis you can use the discrete tag above a heading to exclude it from the table of contents.
