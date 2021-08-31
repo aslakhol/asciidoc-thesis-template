@@ -15,9 +15,9 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url("./fonts/LM-regular.woff2") format("woff2"),
-    url("./fonts/LM-regular.woff") format("woff"),
-    url("./fonts/LM-regular.ttf") format("truetype");
+  src: url("../fonts/LM-regular.woff2") format("woff2"),
+    url("../fonts/LM-regular.woff") format("woff"),
+    url("../fonts/LM-regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -25,9 +25,9 @@
   font-style: italic;
   font-weight: normal;
   font-display: swap;
-  src: url("./fonts/LM-italic.woff2") format("woff2"),
-    url("./fonts/LM-italic.woff") format("woff"),
-    url("./fonts/LM-italic.ttf") format("truetype");
+  src: url("../fonts/LM-italic.woff2") format("woff2"),
+    url("../fonts/LM-italic.woff") format("woff"),
+    url("../fonts/LM-italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -35,9 +35,9 @@
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url("./fonts/LM-bold.woff2") format("woff2"),
-    url("./fonts/LM-bold.woff") format("woff"),
-    url("./fonts/LM-bold.ttf") format("truetype");
+  src: url("../fonts/LM-bold.woff2") format("woff2"),
+    url("../fonts/LM-bold.woff") format("woff"),
+    url("../fonts/LM-bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -45,9 +45,9 @@
   font-style: italic;
   font-weight: bold;
   font-display: swap;
-  src: url("./fonts/LM-bold-italic.woff2") format("woff2"),
-    url("./fonts/LM-bold-italic.woff") format("woff"),
-    url("./fonts/LM-bold-italic.ttf") format("truetype");
+  src: url("../fonts/LM-bold-italic.woff2") format("woff2"),
+    url("../fonts/LM-bold-italic.woff") format("woff"),
+    url("../fonts/LM-bold-italic.ttf") format("truetype");
 }
 
 /* Box sizing rules */
@@ -346,180 +346,4 @@ ul.sectlevel2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
-}
-
-h2,
-#toctitle {
-  page-break-before: always;
-}
-
-.imageblock,
-pre,
-code,
-tr,
-ol {
-  page-break-inside: avoid;
-}
-
-h3,
-h4,
-h5 {
-  page-break-after: avoid;
-}
-
-.title {
-  page-break-after: avoid;
-  page-break-inside: avoid;
-}
-
-h3 + .paragraph,
-h4 + .paragraph,
-h5 + .paragraph {
-  page-break-before: avoid;
-  page-break-inside: avoid;
-}
-
-h2:not(.discrete) {
-  break-before: right;
-}
-
-@page :blank {
-  @bottom-left {
-    content: "";
-  }
-}
-
-@page {
-  size: A4;
-  margin-top: 1.1in;
-  margin-bottom: 1.1in;
-
-  @bottom-left {
-    content: counter(page, lower-roman);
-  }
-
-  @bottom-center {
-    content: string(title);
-    text-transform: uppercase;
-  }
-}
-
-@page :left {
-  margin-right: 1.31in;
-  margin-left: 0.89in;
-}
-
-@page :right {
-  margin-right: 0.89in;
-  margin-left: 1.31in;
-}
-
-#blank_page {
-  visibility: hidden;
-}
-
-#introduction {
-  counter-reset: page 1;
-}
-
-h2:not(#_abstract):not(.discrete),
-h2:not(#_abstract):not(.discrete) + * {
-  page: body-content;
-}
-
-@page body-content {
-  @bottom-left {
-    content: counter(page);
-  }
-}
-
-.imageblock,
-pre,
-.math {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.toc a::after,
-.toc2 a::after {
-  content: "p. " target-counter(attr(href), page);
-  float: right;
-}
-
-/* Asciidoc tables */
-
-table {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  background: #fff;
-  margin-bottom: 1.25em;
-  border: solid 1px #dedede;
-  word-wrap: normal;
-}
-table thead,
-table tfoot {
-  background: #f7f8f7;
-}
-table tr th,
-table tr td {
-  padding: 0.5625em 0.625em;
-  font-size: inherit;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-table.tableblock,
-th.tableblock,
-td.tableblock {
-  border: 0 solid #dedede;
-}
-table.grid-all > * > tr > * {
-  border-width: 1px;
-}
-
-th.halign-left,
-td.halign-left {
-  text-align: left;
-}
-th.valign-top,
-td.valign-top {
-  vertical-align: top;
-}
-th.valign-bottom,
-td.valign-bottom {
-  vertical-align: bottom;
-}
-
-p.tableblock {
-  text-align: left;
-}
-caption.title {
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-#_bibliography + .sectionbody > .paragraph {
-  font-size: 0.9rem;
-  line-height: 1rem;
-}
-
-#_bibliography + .sectionbody > .paragraph > p {
-  margin-top: 10px;
-}
-
-/* Custom page-breaks for final delivery */
-
-#feature_extraction,
-#gaze_characteristics,
-#IPR_algorithm_p,
-#steps_for_heatmap_p,
-#heatmap_processing_p,
-#seeding,
-#dimensionality_reduction_and_feature_selection,
-#same_training_and_testing_context,
-#two_to_one_features_nrmse_aggregated,
-#appendix_all_pipelines {
-  break-before: always;
 }

@@ -1,0 +1,14 @@
+/* Custom page-breaks for final delivery */
+
+#feature_extraction,
+#gaze_characteristics,
+#IPR_algorithm_p,
+#steps_for_heatmap_p,
+#heatmap_processing_p,
+#seeding,
+#dimensionality_reduction_and_feature_selection,
+#same_training_and_testing_context,
+#two_to_one_features_nrmse_aggregated,
+#appendix_all_pipelines {
+  break-before: always;
+}

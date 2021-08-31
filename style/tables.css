@@ -1,0 +1,62 @@
+/* Asciidoc tables */
+
+table {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+  margin-bottom: 1.25em;
+  border: solid 1px #dedede;
+  word-wrap: normal;
+}
+table thead,
+table tfoot {
+  background: #f7f8f7;
+}
+table tr th,
+table tr td {
+  padding: 0.5625em 0.625em;
+  font-size: inherit;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+table.tableblock,
+th.tableblock,
+td.tableblock {
+  border: 0 solid #dedede;
+}
+table.grid-all > * > tr > * {
+  border-width: 1px;
+}
+
+th.halign-left,
+td.halign-left {
+  text-align: left;
+}
+th.valign-top,
+td.valign-top {
+  vertical-align: top;
+}
+th.valign-bottom,
+td.valign-bottom {
+  vertical-align: bottom;
+}
+
+p.tableblock {
+  text-align: left;
+}
+caption.title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#_bibliography + .sectionbody > .paragraph {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+#_bibliography + .sectionbody > .paragraph > p {
+  margin-top: 10px;
+}

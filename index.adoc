@@ -6,6 +6,8 @@
 :xrefstyle: short
 :sectnums:
 :toc: macro
+:stylesheet: style/empty.css
+:docinfo: shared,private-footer
 
 = The Best Title in the World
 Name of the authors

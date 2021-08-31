@@ -1,0 +1,97 @@
+h2,
+#toctitle {
+  page-break-before: always;
+}
+
+.imageblock,
+pre,
+code,
+tr,
+ol {
+  page-break-inside: avoid;
+}
+
+h3,
+h4,
+h5 {
+  page-break-after: avoid;
+}
+
+.title {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+h3 + .paragraph,
+h4 + .paragraph,
+h5 + .paragraph {
+  page-break-before: avoid;
+  page-break-inside: avoid;
+}
+
+h2:not(.discrete) {
+  break-before: right;
+}
+
+@page :blank {
+  @bottom-left {
+    content: "";
+  }
+}
+
+@page {
+  size: A4;
+  margin-top: 1.1in;
+  margin-bottom: 1.1in;
+
+  @bottom-left {
+    content: counter(page, lower-roman);
+  }
+
+  @bottom-center {
+    content: string(title);
+    text-transform: uppercase;
+  }
+}
+
+@page :left {
+  margin-right: 1.31in;
+  margin-left: 0.89in;
+}
+
+@page :right {
+  margin-right: 0.89in;
+  margin-left: 1.31in;
+}
+
+#blank_page {
+  visibility: hidden;
+}
+
+#introduction {
+  counter-reset: page 1;
+}
+
+h2:not(#_abstract):not(.discrete),
+h2:not(#_abstract):not(.discrete) + * {
+  page: body-content;
+}
+
+@page body-content {
+  @bottom-left {
+    content: counter(page);
+  }
+}
+
+.imageblock,
+pre,
+.math {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.toc a::after,
+.toc2 a::after {
+  content: "p. " target-counter(attr(href), page);
+  float: right;
+}
