@@ -1,0 +1,44 @@
+= Your thesis in asciidoc.
+
+This repository should be everything you need to get started with writing your thesis in asciidoc.
+The text in the template is based on the latex-templated provided the Artificial Intelligence Group at IDI.
+It should give some hints on how to structure your thesis, as well as show you how to use the different features of asciidoc.
+If you would like to see a completed thesis using asciidoc you can take a look at link:https://github.com/aslakhol/thesis/[our thesis.]
+
+
+
+== Getting started:
+```
+gem install asciidoctor
+gem install asciidoctor-bibtex
+gem install asciimath
+```
+
+== To compile
+
+We've set up three different methods for compilation.
+
+=== Local
+
+When compiling the thesis locally, you get the benefit of hotreloading.
+To start locally run:
+`source hot_reload.sh`
+
+=== Web
+
+Asciidoc has the benefit that it compiles to HTML, and as such it can be hosted as a website with very little effort.
+This makes distribution to supervisors very simple, and allows us to use known methods of version tracking for providing our text.
+If you wish to run the web version of the thesis locally you can run:
+`asciidoctor -r asciidoctor-bibtex -a stem -a docinfodir="./configuration/web" index.adoc`
+
+=== Print
+
+At some point you will need to create a print ready document for your thesis.
+There are many ways of creating PDFs from asciidoc, however we decided on using the browser print engine together with the library Paged.js.
+To run the print version of the text you can run:
+`asciidoctor -r asciidoctor-bibtex -a stem -a docinfodir="./configuration/print" index.adoc`
+
+After compiling the document you can open the file in the browser and tweak the css file to ensure that page breaks happen just where you want them.
+We suggest doing this when the text of your thesis is 100% complete.
+Finally you print to pdf with your browser.
+

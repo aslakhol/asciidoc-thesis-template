@@ -1,0 +1,525 @@
+/*!
+ * LaTeX.css (https://latex.now.sh/)
+ *
+ * Source: https://github.com/vincentdoerig/latex-css
+ * Licensed under MIT (https://github.com/vincentdoerig/latex-css/blob/master/LICENSE)
+
+
+ *
+ * Look to the bottom of the file for custom additions for creating the final delivery.
+ *
+*/
+
+@font-face {
+  font-family: "Latin Modern";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("./fonts/LM-regular.woff2") format("woff2"),
+    url("./fonts/LM-regular.woff") format("woff"),
+    url("./fonts/LM-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Latin Modern";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("./fonts/LM-italic.woff2") format("woff2"),
+    url("./fonts/LM-italic.woff") format("woff"),
+    url("./fonts/LM-italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Latin Modern";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("./fonts/LM-bold.woff2") format("woff2"),
+    url("./fonts/LM-bold.woff") format("woff"),
+    url("./fonts/LM-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Latin Modern";
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url("./fonts/LM-bold-italic.woff2") format("woff2"),
+    url("./fonts/LM-bold-italic.woff") format("woff"),
+    url("./fonts/LM-bold-italic.ttf") format("truetype");
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Make default font-size 1rem and add smooth scrolling to anchors */
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Latin Modern", Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 1.8;
+
+  max-width: 80ch;
+  /* min-height: 100vh; */
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+
+  counter-reset: theorem;
+  counter-reset: definition;
+  counter-reset: sidenote-counter;
+
+  color: rgb(0, 0, 0);
+  background-color: hsl(210, 20%, 98%);
+
+  text-rendering: optimizeLegibility;
+}
+
+/* Justify and hyphenate all paragraphs */
+p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make links black */
+a,
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:focus {
+  outline-offset: 2px;
+  outline: 2px solid hsl(220, 90%, 52%);
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Prevent textarea from overflowing */
+textarea {
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Styles for inline code or code snippets */
+code,
+pre,
+kbd {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  font-size: 85%;
+}
+pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  border-radius: 4px;
+  background: hsl(210, 28%, 93%);
+}
+pre code {
+  font-size: 95%;
+  position: relative;
+}
+kbd {
+  background: hsl(210, 5%, 100%);
+  border: 1px solid hsl(210, 5%, 70%);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 75%;
+}
+
+/* allow scroll on the x-axis */
+.scroll-wrapper {
+  overflow-x: auto;
+}
+
+/* if a table is wrapped in a scroll wrapper,
+  the table cells shouldn't wrap */
+.scroll-wrapper > table td {
+  white-space: nowrap;
+}
+
+/* Center align the title */
+h1:first-child {
+  text-align: center;
+}
+
+/* Nested ordered list for ToC */
+nav ol {
+  counter-reset: item;
+  padding-left: 2rem;
+}
+nav li {
+  display: block;
+}
+nav li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+  padding-right: 0.85rem;
+}
+
+/* Center definitions (most useful for display equations) */
+dl dd {
+  text-align: center;
+}
+
+/* Make footnote text smaller and left align it (looks bad with long URLs) */
+.footnotes p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 85%;
+  margin-bottom: 0.4rem;
+}
+.footnotes {
+  border-top: 1px solid hsl(0, 0%, 39%);
+}
+
+/* Center title and paragraph */
+.abstract,
+.abstract p {
+  text-align: center;
+  margin-top: 0;
+}
+.abstract {
+  margin: 2.25rem 0;
+}
+.abstract > h2 {
+  font-size: 1rem;
+  margin-bottom: -0.2rem;
+}
+
+/* Format the LaTeX symbol correctly (a higher up, e lower) */
+.latex span:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  vertical-align: 0.28em;
+  margin-left: -0.48em;
+  margin-right: -0.15em;
+  line-height: 1ex;
+}
+
+.latex span:nth-child(2) {
+  text-transform: uppercase;
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+  line-height: 1ex;
+}
+
+/* Heading typography */
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  margin-bottom: 1.625rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+h5 {
+  font-size: 1rem;
+  margin-top: 1.8rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 2.5rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.625rem;
+}
+
+h1 + h2 {
+  margin-top: 1.625rem;
+}
+
+h2 + h3,
+h3 + h4,
+h4 + h5 {
+  margin-top: 0.8rem;
+}
+
+h5 + h6 {
+  margin-top: -0.8rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.8rem;
+}
+
+.toc ul {
+  list-style-type: none;
+}
+
+ul.sectlevel1 > li > a {
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+ul.sectlevel2 {
+  margin-bottom: 1rem;
+}
+
+#toctitle {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+h2,
+#toctitle {
+  page-break-before: always;
+}
+
+.imageblock,
+pre,
+code,
+tr,
+ol {
+  page-break-inside: avoid;
+}
+
+h3,
+h4,
+h5 {
+  page-break-after: avoid;
+}
+
+.title {
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+h3 + .paragraph,
+h4 + .paragraph,
+h5 + .paragraph {
+  page-break-before: avoid;
+  page-break-inside: avoid;
+}
+
+h2:not(.discrete) {
+  break-before: right;
+}
+
+@page :blank {
+  @bottom-left {
+    content: "";
+  }
+}
+
+@page {
+  size: A4;
+  margin-top: 1.1in;
+  margin-bottom: 1.1in;
+
+  @bottom-left {
+    content: counter(page, lower-roman);
+  }
+
+  @bottom-center {
+    content: string(title);
+    text-transform: uppercase;
+  }
+}
+
+@page :left {
+  margin-right: 1.31in;
+  margin-left: 0.89in;
+}
+
+@page :right {
+  margin-right: 0.89in;
+  margin-left: 1.31in;
+}
+
+#blank_page {
+  visibility: hidden;
+}
+
+#introduction {
+  counter-reset: page 1;
+}
+
+h2:not(#_abstract):not(.discrete),
+h2:not(#_abstract):not(.discrete) + * {
+  page: body-content;
+}
+
+@page body-content {
+  @bottom-left {
+    content: counter(page);
+  }
+}
+
+.imageblock,
+pre,
+.math {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.toc a::after,
+.toc2 a::after {
+  content: "p. " target-counter(attr(href), page);
+  float: right;
+}
+
+/* Asciidoc tables */
+
+table {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+  margin-bottom: 1.25em;
+  border: solid 1px #dedede;
+  word-wrap: normal;
+}
+table thead,
+table tfoot {
+  background: #f7f8f7;
+}
+table tr th,
+table tr td {
+  padding: 0.5625em 0.625em;
+  font-size: inherit;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+table.tableblock,
+th.tableblock,
+td.tableblock {
+  border: 0 solid #dedede;
+}
+table.grid-all > * > tr > * {
+  border-width: 1px;
+}
+
+th.halign-left,
+td.halign-left {
+  text-align: left;
+}
+th.valign-top,
+td.valign-top {
+  vertical-align: top;
+}
+th.valign-bottom,
+td.valign-bottom {
+  vertical-align: bottom;
+}
+
+p.tableblock {
+  text-align: left;
+}
+caption.title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#_bibliography + .sectionbody > .paragraph {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+#_bibliography + .sectionbody > .paragraph > p {
+  margin-top: 10px;
+}
+
+/* Custom page-breaks for final delivery */
+
+#feature_extraction,
+#gaze_characteristics,
+#IPR_algorithm_p,
+#steps_for_heatmap_p,
+#heatmap_processing_p,
+#seeding,
+#dimensionality_reduction_and_feature_selection,
+#same_training_and_testing_context,
+#two_to_one_features_nrmse_aggregated,
+#appendix_all_pipelines {
+  break-before: always;
+}
