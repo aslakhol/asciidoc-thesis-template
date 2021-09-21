@@ -1,0 +1,17 @@
+= README
+
+This is the presentation we use for the demo.
+
+== Setup
+
+To setup a new presentation in asciidoc:
+
+`npm init -y`
+
+`npm i --save asciidoctor @asciidoctor/reveal.js`
+
+== Start the project
+
+To start the project:
+
+`npx asciidoctor-revealjs presentation.adoc`

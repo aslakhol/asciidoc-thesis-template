@@ -1,0 +1,51 @@
+= Velkommen til Asciidoc, bedre enn latex
+
+== Slide One
+
+* Foo
+* Bar
+* World
+* Baz
+
+== Hva er problemet
+* Vi er ikke fan av LaTeX
+ - Overleaf er slitsomt
+ - Det er for mye guff
+ - Vi kan ikke LaTeX
+* Vi må ha avanserte funksjoner
+ - Table of contents
+ - Siteringer
+ - Formler
+ - Seksjonreferanser
+* Vi ville gjerne:
+ - Bruke VSCode
+ - Bruke git og GitHub
+ - Bruke Vim (og ikke bruke Vim)
+
+== Hva er asciidoc
+
+
+== Hva fikk vi?
+* CSV tables
+* Skrive CSS
+* Setninger på ny linje
+* Zotero
+
+
+== Hvorfor asciidoc
+
+ * Struktur og innhold separert
+ * Lett å lese, lett å jobbe med
+ * Verktøy vi kjenner
+ * Muligheten for avanserte funksjoner
+
+
+== Hvordan asciidoc
+
+
+== Lets asciidoc
+
+
+== Andre tips og triks
+
+
