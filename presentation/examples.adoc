@@ -1,3 +1,7 @@
+// (C) Aslak Hollund & August Sollesnes Solvang
+:xrefstyle: short
+:sectnums:
+
 = Top level heading
 
 This is a paragrah.
@@ -12,7 +16,7 @@ Which we can reference, like this xref:sub_heading_id[]
 
 == Links are done like this
 
-http://google.com[Raw asciidoc text]
+https://raw.githubusercontent.com/aslakhol/asciidoc-thesis-template/main/presentation/examples.adoc[Raw asciidoc text]
 
 == This section will contain a table
 
