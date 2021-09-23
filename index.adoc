@@ -24,7 +24,6 @@ Faculty of Information Technology and Electrical Engineering
 image:figures/ntnu.png[ntnu, 100]
 
 
-
 include::sections/0_preface.adoc[]
 
 toc::[]

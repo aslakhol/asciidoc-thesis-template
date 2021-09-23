@@ -117,3 +117,8 @@ One of the benefits of leaving Overleaf and LaTeX, is that it is very easy to us
 If you happen to agree with us that VS Code is a great alternative, there is also a asciidoc extension.
 You can find the extension here: link:https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[here.]
 The developers are very accepting of contributions and we have written two additions which allow for autocompletion from section ids and bibtex entries.
+
+
+== Our inspiration
+
+When searching for tools to replace LaTeX, we came across https://www.youtube.com/watch?v=ggBv_pZDu0c[this video] which set us upon the path of asciidoc.

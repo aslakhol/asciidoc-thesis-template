@@ -55,7 +55,6 @@ That is done like this:
 Lastly we will show you images.
 They are imported like this:
 
-
 [[example_diagram]]
 .Boxes and arrows are nice.
 image::../figures/figure1.png[]

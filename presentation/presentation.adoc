@@ -1,11 +1,6 @@
-= Velkommen til Asciidoc, bedre enn latex
+= Asciidoc
 
-== Slide One
-
-* Foo
-* Bar
-* World
-* Baz
+image::./logo.png[]
 
 == Hva er problemet
 * Vi er ikke fan av LaTeX
@@ -13,13 +8,20 @@
  - Det er for mye guff
  - Vi kan ikke LaTeX
 
-== Motivasjon for reisen
+== Hva vil vi ha i et verktøy
 * Nå skal vi skrive i et år
  - Hvorfor ikke bruke verktøy vi er flinke med?
 * Vi ville gjerne:
  - Bruke VSCode
  - Bruke git og GitHub
  - Bruke Vim (og ikke bruke Vim)
+
+== LaTeX
+* Kan gjøre alt vi måtte trenge
+* Kan bruke git
+* Kan rendres lokalt, men slitsomt
+* Tett kobling mellom struktur og innhold
+* Vanskelig å detaljstyle
 
 == Word
 * Umulig å versjonskontrolere
@@ -28,7 +30,7 @@
 * Ser stygt ut
 
 == HTML
-* Presis layout
+* Presis layout (css)
 * Vi kan det godt
 * Vanskelig å lese raw
 * Slitsomt å skrive
@@ -47,48 +49,41 @@
 * Lett å lese og å skrive
 * Har plugins for funksjonene vi trengte
 
+== La oss ta en titt på Asciidoc
 
-= La oss ta en titt på Asciidoc
-
-
-
-== Hva er asciidoc
-
-
-== Hva fikk vi?
-* CSV tables
-* Skrive CSS
-* Setninger på ny linje
+== Toolchain
+* Malen
+* VS Code Plugins
+* Netlify
+* Scripts for hot reload
+* Bra generering av PDF for print
+* Grammarly
 * Zotero
 
 
-== Hvorfor asciidoc
-
- * Struktur og innhold separert
- * Lett å lese, lett å jobbe med
- * Verktøy vi kjenner
- * Muligheten for avanserte funksjoner
-
-
-== Hvordan asciidoc
-
+== Zotero
+* Siteringsbibliotek
+* Del bibliotek
+* Auto generer bibtex fil
 
 == Lets asciidoc
 
+== Oppgave 1
+* Lag et nytt repo på github
+* Skriv en adoc fil om favorittfilmen din
+* Den skal inkludere:
+ - Overskrift
+ - Avsnitt om hvorfor du liker filmen
+ - Et bilde relatert til filmen
+ - En punktliste med viktige skuespillere
+
+== Oppgave 2
+* Klon malen
+* Følg getting started
+* Compile locally
 
 == Andre tips og triks
-
-== Toolchain
-* malen
-* plugins
-* netlify - versjonering av retting
-* bra generering av PDF for print
-* hot_reload
-* zotero
-
-
-== Zotero
-* citation controll
-* shared library
-* auto-generation of bibtex
-
+* Citations hack
+* Parskriving
+* Voice to speech for skrivesperre
+* Ha det gøy
