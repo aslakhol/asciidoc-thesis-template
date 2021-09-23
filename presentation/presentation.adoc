@@ -12,15 +12,45 @@
  - Overleaf er slitsomt
  - Det er for mye guff
  - Vi kan ikke LaTeX
-* Vi må ha avanserte funksjoner
- - Table of contents
- - Siteringer
- - Formler
- - Seksjonreferanser
+
+== Motivasjon for reisen
+* Nå skal vi skrive i et år
+ - Hvorfor ikke bruke verktøy vi er flinke med?
 * Vi ville gjerne:
  - Bruke VSCode
  - Bruke git og GitHub
  - Bruke Vim (og ikke bruke Vim)
+
+== Word
+* Umulig å versjonskontrolere
+* Lite customizable
+* Upresis layout kontroll
+* Ser stygt ut
+
+== HTML
+* Presis layout
+* Vi kan det godt
+* Vanskelig å lese raw
+* Slitsomt å skrive
+
+== Markdown
+* Liten kobling mellom struktur og innhold
+* Lett å lese og å skrive
+* Mangler avanserte funksjoner
+ - Table of contents
+ - Siteringer
+ - Formler
+ - Seksjonreferanser
+
+== Asciidoc
+* Liten kobling mellom struktur og innhold
+* Lett å lese og å skrive
+* Har plugins for funksjonene vi trengte
+
+
+= La oss ta en titt på Asciidoc
+
+
 
 == Hva er asciidoc
 
@@ -48,4 +78,17 @@
 
 == Andre tips og triks
 
+== Toolchain
+* malen
+* plugins
+* netlify - versjonering av retting
+* bra generering av PDF for print
+* hot_reload
+* zotero
+
+
+== Zotero
+* citation controll
+* shared library
+* auto-generation of bibtex
 

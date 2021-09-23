@@ -1,0 +1,57 @@
+= Top level heading
+
+This is a paragrah.
+All sentences in paragraphs are written on their own line.
+Because of this it's very easy to notice problems in the flow of the text.
+
+[[sub_heading_id]]
+== This is a subheading
+
+This heading has an id.
+Which we can reference, like this xref:sub_heading_id[]
+
+== Links are done like this
+
+http://google.com[Raw asciidoc text]
+
+== This section will contain a table
+
+Tables in asciidoc are exceedingly simple.
+They can be created by simply importing csv files.
+
+.This is the table text.
+[format="csv", options="header"]
+|===
+include::../tables/csv_table.csv[]
+|===
+
+We can also make tables with ascidoc.
+That is done like this:
+
+[cols="1,1"]
+|===
+| Fruit | Color
+
+| Orange
+| Orange
+
+| Apple
+| Red, Green, Yello
+
+| Watermelon
+| Green, Red
+
+| Banana
+| Yellow
+
+|===
+
+== Images
+
+Lastly we will show you images.
+They are imported like this:
+
+
+[[example_diagram]]
+.Boxes and arrows are nice.
+image::../figures/figure1.png[]

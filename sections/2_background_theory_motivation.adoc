@@ -55,7 +55,10 @@ include::../tables/adoc_table.adoc[]
 
 [[movies]]
 .A csv table describing the top five movies by IMDB ranking citenp:[usersIMDbTopRated].
-include::../tables/adoc_table.adoc[]
+[format="csv", options="header"]
+|===
+include::../tables/csv_table.csv[]
+|===
 
 As you can see from Table xref:fruit_colors[] and xref:movies[], tables are nice.
 However, again, you need to discuss the contents of the table in the text.
