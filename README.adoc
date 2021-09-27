@@ -56,6 +56,12 @@ We suggest doing this when the text of your thesis is 100% complete.
 Finally you print to pdf with your browser.
 
 
+== Netlify
+
+If you want to deploy this to netlify this is the build command you use:
+
+`gem install asciidoctor asciidoctor-bibtex && asciidoctor -r asciidoctor-bibtex -a stem -a docinfodir="docinfo/prod" index.adoc`
+
 == How do you write asciidoc?
 
 In general asciidoc is supposed to be as light weight as possible.
