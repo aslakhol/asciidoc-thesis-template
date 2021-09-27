@@ -1,6 +1,7 @@
 = README
 
 This is the presentation we use for the demo.
+The text of the presentation is in Norwegian, so sorry about that.
 
 == Setup
 
