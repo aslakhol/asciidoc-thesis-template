@@ -57,6 +57,7 @@ Finally you print to pdf with your browser.
 
 
 == Netlify
+
 If you want to deploy this to netlify this is the build command you use:
 
 `gem install asciidoctor asciidoctor-bibtex && asciidoctor -r asciidoctor-bibtex -a stem -a docinfodir="docinfo/prod" index.adoc`
